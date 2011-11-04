@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-uni-wtal-ger
-Version:	20111103
+Version:	20111104
 Release:	1
 Summary:	TeXLive uni-wtal-ger package
 Group:		Publishing
