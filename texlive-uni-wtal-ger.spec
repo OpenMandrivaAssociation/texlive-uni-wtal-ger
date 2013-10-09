@@ -1,16 +1,17 @@
-# revision 22169
+# revision 31541
 # category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
+# catalog-ctan /macros/latex/contrib/biblatex-contrib/uni-wtal-ger
+# catalog-date 2013-08-30 07:53:51 +0200
+# catalog-license lppl1.3
+# catalog-version 0.2
 Name:		texlive-uni-wtal-ger
-Version:	20111104
-Release:	2
-Summary:	TeXLive uni-wtal-ger package
+Epoch:		1
+Version:	0.2
+Release:	1
+Summary:	Citation style for literary studies at the University of Wuppertal
 Group:		Publishing
-URL:		http://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
+URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/uni-wtal-ger
+License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-ger.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-ger.doc.tar.xz
 BuildArch:	noarch
@@ -19,7 +20,10 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-TeXLive uni-wtal-ger package.
+The package defines a biblatex citation style based on the
+author-title style of biblatex-dw. The citations are optimised
+for literary studies in faculty of humanities at the Bergische
+Universitat Wuppertal.
 
 %post
     %{_sbindir}/texlive.post
@@ -33,6 +37,7 @@ TeXLive uni-wtal-ger package.
 %files
 %{_texmfdistdir}/tex/latex/uni-wtal-ger/uni-wtal-ger.bbx
 %{_texmfdistdir}/tex/latex/uni-wtal-ger/uni-wtal-ger.cbx
+%doc %{_texmfdistdir}/doc/latex/uni-wtal-ger/CHANGES
 %doc %{_texmfdistdir}/doc/latex/uni-wtal-ger/LIESMICH
 %doc %{_texmfdistdir}/doc/latex/uni-wtal-ger/README
 %doc %{_texmfdistdir}/doc/latex/uni-wtal-ger/germanistik.bib
@@ -48,17 +53,3 @@ TeXLive uni-wtal-ger package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111104-2
-+ Revision: 757318
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-1
-+ Revision: 719854
-- texlive-uni-wtal-ger
-- texlive-uni-wtal-ger
-- texlive-uni-wtal-ger
-- texlive-uni-wtal-ger
-
