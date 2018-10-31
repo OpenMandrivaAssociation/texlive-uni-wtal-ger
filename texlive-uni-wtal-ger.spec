@@ -7,7 +7,7 @@
 Name:		texlive-uni-wtal-ger
 Epoch:		1
 Version:	0.2
-Release:	9
+Release:	10
 Summary:	Citation style for literary studies at the University of Wuppertal
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/uni-wtal-ger
