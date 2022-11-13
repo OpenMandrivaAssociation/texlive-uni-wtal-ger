@@ -1,19 +1,13 @@
-# revision 31541
-# category Package
-# catalog-ctan /macros/latex/contrib/biblatex-contrib/uni-wtal-ger
-# catalog-date 2013-08-30 07:53:51 +0200
-# catalog-license lppl1.3
-# catalog-version 0.2
 Name:		texlive-uni-wtal-ger
 Epoch:		1
-Version:	0.2
-Release:	10
+Version:	31541
+Release:	1
 Summary:	Citation style for literary studies at the University of Wuppertal
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/uni-wtal-ger
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-ger.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-ger.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-ger.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-ger.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ for literary studies in faculty of humanities at the Bergische
 Universitat Wuppertal.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,7 +40,7 @@ Universitat Wuppertal.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
